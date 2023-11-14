@@ -31,7 +31,7 @@ class TestMiClaseMethods(unittest.TestCase):
 
     def test_Encuentra(self):
         lista = [1, 5, 8]
-        elemento = 7
+        elemento = 5
         self.assertTrue(self.objeto.Encuentra(lista, elemento))
         #
         self.assertFalse(self.objeto.Encuentra(lista, 10))
