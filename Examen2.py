@@ -25,12 +25,21 @@ class MiClase:
         if any(song is None for song in lista):
             return False
         return True
+    def Encuentra(self,lista,elemento):
+        if elemento in lista:
+            return True
+        else:
+            return False
+    
 ################################################################################################
 #Ejemplo de ejecución
 # Crear un objeto de la clase MiClase
 objeto = MiClase(5, 120, 12, ["Canción 1", "Canción 2", "Canción 3"], [0.8, 0.9, 0.7])
 # Ejemplo de uso de los métodos
+lista=[1,5,8]
+elemento=5
 print(objeto.ObtieneValencia(1234567))  # Debería imprimir 4
 print(objeto.DivisibleTempo(10))  # Debería imprimir [1, 2, 5, 10]
 print(objeto.ObtieneMasBailable([0.8, 0.9, 0.7]))  # Debería imprimir 0.9
 print(objeto.VerificaListaCanciones(["Canción 1", "Canción 2", "Canción 3"]))  # Debería imprimir True
+print(objeto.Encuentra(lista,elemento)) #debería imprimir True
