@@ -38,4 +38,4 @@ jobs:
     - name: Execute Test
       run: |
         cd source
-        python -m unittest -v test.py
+        python -m unittest -v test_MiClase.py
